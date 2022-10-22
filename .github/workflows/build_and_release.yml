@@ -52,18 +52,18 @@ jobs:
       fail-fast: false
       matrix:
         cross_host:
-#            - arm-linux-musleabi
+            - arm-linux-musleabi
            - aarch64-linux-musl
-#            - mips-linux-musl
-#            - mipsel-linux-musl
-#            - mips64-linux-musl
-#            - x86_64-linux-musl
-#            - x86_64-w64-mingw32
-#            - i686-w64-mingw32
+            - mips-linux-musl
+            - mipsel-linux-musl
+            - mips64-linux-musl
+            - x86_64-linux-musl
+            - x86_64-w64-mingw32
+            - i686-w64-mingw32
         use_libressl: [0, 1]
         exclude:
-          - cross_host: x86_64-w64-mingw32
-            use_libressl: 1
+  #        - cross_host: x86_64-w64-mingw32
+  #          use_libressl: 1
           - cross_host: i686-w64-mingw32
             use_libressl: 1
     steps:
