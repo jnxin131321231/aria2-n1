@@ -53,7 +53,7 @@ jobs:
       matrix:
         cross_host:
             - arm-linux-musleabi
-           - aarch64-linux-musl
+            - aarch64-linux-musl
             - mips-linux-musl
             - mipsel-linux-musl
             - mips64-linux-musl
